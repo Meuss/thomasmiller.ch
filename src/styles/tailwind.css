@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default styles for plain HTML elements */
+@layer base {
+	::selection {
+		color: white;
+		background: #de3a5850;
+	}
+	body {
+		background-color: #f5f5f5;
+		h1 {
+			font-size: 40px;
+		}
+	}
+}
+/* Classes that you’d still like to be able to override with utility classes (card, btn, etc.) */
+@layer components {
+}
+
+/* CSS features that Tailwind doesn’t include utilities for out of the box */
+@layer utilities {
+	/* overriding tailwind container for desktop first */
+	/* .container {
+    @apply mx-auto;
+    max-width: 1200px;
+  }
+  @screen lg {
+    .container {
+      max-width: 1200px;
+    }
+  }
+  @screen md {
+    .container {
+      max-width: 900px;
+    }
+  }
+  @screen xs {
+    .container {
+      max-width: 100%;
+    }
+  } */
+}
