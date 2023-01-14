@@ -1,6 +1,5 @@
 import adapter from '@sveltejs/adapter-netlify';
-import preprocess from 'svelte-preprocess';
-import nesting from 'postcss-nesting';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,11 +7,7 @@ const config = {
 		adapter: adapter()
 	},
 	preprocess: [
-		preprocess({
-			postcss: {
-				plugins: [nesting()]
-			}
-		})
+		vitePreprocess()
 	]
 };
 

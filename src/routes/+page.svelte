@@ -2,31 +2,37 @@
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
+	import Footer from '$lib/components/Footer.svelte';
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
-		// testing gsap
-		gsap.to('.test', {
-			y: 100,
-			duration: 1
-		});
-		gsap.to('p', {
-			scrollTrigger: {
-				trigger: '.text-red-500',
-				start: 'top 80%',
-				end: 'bottom 20%',
-				scrub: true
-			},
-			x: 100,
-			y: 100,
-			rotate: 360,
-			scale: 2,
-			duration: 1
-		});
 	});
 </script>
 
-<div class="h-[2000px]">
-	<h1 class="test text-red-500">Welcome to SvelteKit</h1>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-</div>
+<svelte:head>
+	<title>Thomas Miller, Développeur web freelance</title>
+</svelte:head>
+
+<main class="flex flex-col justify-between h-full">
+	<div>
+		<div class="text-xl leading-none">Bonjour, je suis</div>
+		<h1 class="text-3xl leading-none">Thomas Miller</h1>
+	</div>
+
+	<div>
+		<h2>Développeur web freelance</h2>
+		<p>
+			Je développe des projets en tant que freelancer pour des clients dans toute la Suisse. Actuellement en train de construire
+			des trucs cool chez <a href="https://marvelous.digital" target="_blank" rel="noreferrer">Marvelous Digital</a> et
+			<a href="https://macmac.ch" target="_blank" rel="noreferrer">macmac</a>.
+		</p>
+		<p>Vous avez un projet en tête? <a href="/">Contactez-moi</a>.</p>
+	</div>
+
+	<nav class="flex flex-col">
+		<a href="/a-propos">À propos</a>
+		<a href="/projects">Projets</a>
+		<a href="/contact">Contact</a>
+	</nav>
+
+	<Footer />
+</main>
