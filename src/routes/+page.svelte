@@ -4,25 +4,25 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 	onMount(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    // testing gsap
+		gsap.registerPlugin(ScrollTrigger);
+		// testing gsap
 		gsap.to('.test', {
 			y: 100,
 			duration: 1
 		});
-    gsap.to('p', {
-    	scrollTrigger: {
-    		trigger: '.text-red-500',
-    		start: 'top 80%',
-    		end: 'bottom 20%',
-    		scrub: true
-    	},
-    	x: 100,
-    	y: 100,
-    	rotate: 360,
-    	scale: 2,
-    	duration: 1
-    });
+		gsap.to('p', {
+			scrollTrigger: {
+				trigger: '.text-red-500',
+				start: 'top 80%',
+				end: 'bottom 20%',
+				scrub: true
+			},
+			x: 100,
+			y: 100,
+			rotate: 360,
+			scale: 2,
+			duration: 1
+		});
 	});
 </script>
 
