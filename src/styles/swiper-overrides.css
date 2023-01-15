@@ -1,0 +1,37 @@
+:root {
+	--swiper-theme-color: #ff7d00;
+	--swiper-navigation-color: #ff7d00;
+	--swiper-navigation-size: 60px;
+}
+.swiper-slide {
+	margin-bottom: 50px;
+}
+.swiper-button-prev {
+	left: 100px;
+	transform: translateY(-50px);
+	transition: all 0.25s ease;
+}
+.swiper-button-next {
+	right: 100px;
+	transform: translateY(-50px);
+	transition: all 0.25s ease;
+}
+.swiper .swiper-button-next.swiper-button-disabled,
+.swiper .swiper-button-prev.swiper-button-disabled {
+	opacity: 0;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+	margin-top: 0;
+	transform: translateY(-50%);
+	/* background-color: rgba(0, 0, 0, 0.5); */
+	height: calc(100% - 80px);
+}
+.swiper .swiper-button-next {
+	padding: 0 30px 0 40px;
+	right: 0;
+}
+.swiper .swiper-button-prev {
+	padding: 0 40px 0 30px;
+	left: 0;
+}

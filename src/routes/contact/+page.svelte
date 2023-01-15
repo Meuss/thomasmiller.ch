@@ -8,7 +8,7 @@
 </svelte:head>
 
 <main class="flex flex-col justify-between items-start relative gap-[100px]">
-	<div>
+	<div class="container">
 		<p>
 			<a href="/" class="flex gap-2 items-center -translate-x-[25px]">
 				<LeftArrow />
@@ -18,10 +18,9 @@
 		<h1>Contact</h1>
 	</div>
 
-	<div class="max-w-[900px]">
-		<p>Swaggy McSwagg.</p>
-		<p>Vous avez un projet en tête? <a href="/contact">Contactez-moi</a>.</p>
-	</div>
+	<div class="container">J'ai besoin d'amis, contact pls</div>
 
-	<Nav />
+	<div class="container">
+		<Nav />
+	</div>
 </main>

@@ -9,7 +9,9 @@
 <div class="layout min-h-screen py-[10vh] flex flex-col justify-center">
 	<div class="container relative self-stretch">
 		<Toggle />
-		<slot />
+	</div>
+	<slot />
+	<div class="container relative self-stretch">
 		<Footer />
 	</div>
 	<Gradient />
