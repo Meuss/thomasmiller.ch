@@ -24,6 +24,17 @@ module.exports = {
 				torange: '#FF7D00',
 				tbeige: '#FFECD1'
 			},
+			fontWeight: {
+				thin: 100,
+				extralight: 200,
+				light: 300,
+				normal: 400,
+				medium: 500,
+				semibold: 600,
+				bold: 700,
+				extrabold: 800,
+				black: 900
+			},
 			fontSize: {
 				xxs: '1rem', // 16px
 				xs: '1.125rem', // 18px

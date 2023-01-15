@@ -24,6 +24,22 @@
 		font-family: 'Warownia', 'Helvetica', sans-serif;
 		word-spacing: 1px;
 	}
+	h1,
+	h2 {
+		font-size: theme(fontSize.xl);
+	}
+	h2 {
+		margin-bottom: 1.5rem;
+	}
+	p {
+		margin-bottom: 1.2rem;
+		a {
+			color: theme(colors.torange);
+			font-weight: theme(fontWeight.extrabold);
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+	}
 }
 /* Utility classes (.card, .btn, etc.) */
 @layer components {
