@@ -14,16 +14,15 @@
 		font-family: 'Archivo', 'Helvetica', sans-serif;
 		font-size: theme(fontSize.base);
 		color: theme(colors.tbeige);
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: 'Warownia', 'Helvetica', sans-serif;
-			word-spacing: 1px;
-			color: theme(colors.tbeige);
-		}
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Warownia', 'Helvetica', sans-serif;
+		word-spacing: 1px;
 	}
 }
 /* Utility classes (.card, .btn, etc.) */
@@ -35,7 +34,7 @@
 	/* overriding tailwind container for desktop first */
 	.container {
 		@apply mx-auto;
-		max-width: 1600px;
+		max-width: 1400px;
 	}
 	@screen lg {
 		.container {

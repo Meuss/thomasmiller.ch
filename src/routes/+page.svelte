@@ -3,6 +3,7 @@
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Footer from '$lib/components/Footer.svelte';
+	import Toggle from '$lib/components/Toggle.svelte';
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
 	});
@@ -12,7 +13,8 @@
 	<title>Thomas Miller, Développeur web freelance</title>
 </svelte:head>
 
-<main class="flex flex-col justify-between h-full">
+<main class="flex flex-col justify-between h-full relative">
+	<Toggle />
 	<div>
 		<div class="text-xl leading-none">Bonjour, je suis</div>
 		<h1 class="text-3xl leading-none">Thomas Miller</h1>
@@ -28,9 +30,9 @@
 		<p>Vous avez un projet en tête? <a href="/">Contactez-moi</a>.</p>
 	</div>
 
-	<nav class="flex flex-col">
+	<nav class="flex flex-col items-start">
 		<a href="/a-propos">À propos</a>
-		<a href="/projects">Projets</a>
+		<a href="/projets">Projets</a>
 		<a href="/contact">Contact</a>
 	</nav>
 
