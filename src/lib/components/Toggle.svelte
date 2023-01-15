@@ -2,16 +2,20 @@
 	import Toggle from 'svelte-toggle';
 	import Pause from '$lib/icons/Pause.svelte';
 	import Play from '$lib/icons/Play.svelte';
-	import { fluidPlaying } from '$lib/stores/fluid.js';
+	import { fluidStore } from '$lib/stores/fluid.js';
 
 	let toggled;
 
-	fluidPlaying.subscribe((value) => {
-		toggled = value;
+	fluidStore.subscribe((value) => {
+		toggled = value.status;
 	});
 
 	function handleToggle(event) {
-		fluidPlaying.set(event.detail);
+		fluidStore.set({
+			status: event.detail,
+			mouseX: event.clientX,
+			mouseY: event.clientY
+		});
 	}
 </script>
 

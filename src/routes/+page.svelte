@@ -1,5 +1,6 @@
 <script>
 	import Nav from '$lib/components/Nav.svelte';
+	import Scrambler from '$lib/components/Scrambler.svelte';
 </script>
 
 <svelte:head>
@@ -8,12 +9,12 @@
 
 <main class="flex flex-col justify-between items-start relative gap-[100px]">
 	<div>
-		<div class="text-xl leading-none">Bonjour, je suis</div>
+		<div class="text-xl leading-none font-warownia">Bonjour, je suis</div>
 		<h1 class="text-3xl leading-none text-torange">Thomas Miller</h1>
 	</div>
 
 	<div class="max-w-[900px]">
-		<h2>Développeur web freelance</h2>
+		<Scrambler />
 		<p>
 			Je développe des projets en tant que freelancer pour des clients dans toute la Suisse. Actuellement en train de chill chez <a
 				href="https://marvelous.digital"

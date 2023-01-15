@@ -25,16 +25,16 @@
 			const arrow = link.querySelector('svg');
 			const otherLinks = Array.from(links).filter((l) => l !== link);
 			gsap.defaults({ ease: 'power4.out' });
-			if(!link.classList.contains('active')) {
+			if (!link.classList.contains('active')) {
 				link.addEventListener('mouseenter', () => {
-					gsap.to(link, { x: 0, color: '#FF7D00', duration: 0.5 });
-					gsap.to(otherLinks, { opacity: 0.5, duration: 0.2 });
-					gsap.to(arrow, { opacity: 1, x: 0, duration: 0.7 });
+					gsap.to(link, { x: 0, color: '#FF7D00', duration: 0.8 });
+					gsap.to(otherLinks, { opacity: 0.5, duration: 0.4 });
+					gsap.to(arrow, { opacity: 1, x: 0, duration: 1 });
 				});
 				link.addEventListener('mouseleave', () => {
-					gsap.to(link, { x: -59, color: '#FFECD1', duration: 0.5 });
-					gsap.to(otherLinks, { opacity: 1, duration: 0.2 });
-					gsap.to(arrow, { opacity: 0, x: 0, duration: 0.7 });
+					gsap.to(link, { x: -59, color: '#FFECD1', duration: 0.8 });
+					gsap.to(otherLinks, { opacity: 1, duration: 0.4 });
+					gsap.to(arrow, { opacity: 0, x: 0, duration: 1 });
 				});
 			}
 		});

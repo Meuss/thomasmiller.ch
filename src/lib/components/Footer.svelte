@@ -3,6 +3,24 @@
 	import Email from '$lib/icons/Email.svelte';
 	import Github from '$lib/icons/Github.svelte';
 	import Linkedin from '$lib/icons/Linkedin.svelte';
+
+	const links = [
+		{
+			label: 'Me contacter par email',
+			icon: Email,
+			url: 'mailto:thomas.miller147@gmail.com'
+		},
+		{
+			label: 'Mon profil Github',
+			icon: Github,
+			url: 'https://github.com/Meuss'
+		},
+		{
+			label: 'Mon profil Linkedin',
+			icon: Linkedin,
+			url: 'https://www.linkedin.com/in/thomas-miller-671589a3'
+		}
+	];
 </script>
 
 <footer class="absolute bottom-0 right-4 flex justify-end gap-10 items-center">
@@ -12,20 +30,14 @@
 		<span>Thomas Miller</span>
 	</div>
 	<div class="flex justify-between gap-4 items-center socials">
-		<a href="mailto:thomas.miller147@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Me contacter par email">
-			<Email />
-		</a>
-		<a href="https://github.com/Meuss" target="_blank" rel="noopener noreferrer" aria-label="Mon profil Github">
-			<Github />
-		</a>
-		<a
-			href="https://www.linkedin.com/in/thomas-miller-671589a3/"
-			target="_blank"
-			rel="noopener noreferrer"
-			aria-label="Mon profil Linkedin"
-		>
-			<Linkedin />
-		</a>
+		{#each links as link}
+			<a class="relative p-2" href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
+				<svelte:component this={link.icon} />
+				<span
+					class="bg-white rounded-full absolute w-14 h-14 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-[1] border-torange border scale-75 opacity-0 duration-300"
+				/>
+			</a>
+		{/each}
 	</div>
 </footer>
 
@@ -36,8 +48,20 @@
 				transition: fill 0.25s ease-in-out;
 				fill: theme('colors.tbeige');
 			}
-			&:hover :global(svg path) {
-				fill: theme('colors.torange');
+			&:hover {
+				:global(.email path) {
+					fill: #d34a47;
+				}
+				:global(.github path) {
+					fill: #010409;
+				}
+				:global(.linkedin path) {
+					fill: #0077b5;
+				}
+				span {
+					transform: translate(-50%, -50%) scale(1);
+					opacity: 1;
+				}
 			}
 		}
 	}

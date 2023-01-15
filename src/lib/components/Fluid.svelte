@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fluidPlaying } from '$lib/stores/fluid.js';
+	import { fluidStore } from '$lib/stores/fluid.js';
 	import { shaders, HSVtoRGB } from './webgl/helpers';
 
 	let canvas;
@@ -27,15 +27,16 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
     */
-		let fluidValue;
-		fluidPlaying.subscribe((value) => {
-			fluidValue = value;
-			if (fluidValue) {
+		let fluidStatus;
+		fluidStore.subscribe((value) => {
+			fluidStatus = value.status;
+			if (fluidStatus) {
 				window.addEventListener('mousemove', handleMouseMove);
 			} else {
 				window.removeEventListener('mousemove', handleMouseMove);
 			}
 		});
+
 		resizeCanvas();
 
 		let config = {
