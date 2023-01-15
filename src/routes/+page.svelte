@@ -23,7 +23,7 @@
 			et
 			<a href="https://macmac.ch" target="_blank" rel="noreferrer">macmac</a>.
 		</p>
-		<p>Vous avez un projet en tête? <a href="/">Contactez-moi</a>.</p>
+		<p>Vous avez un projet en tête? <a href="/contact">Contactez-moi</a>.</p>
 	</div>
 
 	<Nav />
