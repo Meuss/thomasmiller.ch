@@ -19,7 +19,7 @@
 	}
 </script>
 
-<div class="toggle-wrapper absolute top-0 right-4 z-10">
+<div class="toggle-wrapper absolute top-0 right-4 z-10 sm:hidden">
 	<Toggle
 		hideLabel
 		label="Turn off visual effects"

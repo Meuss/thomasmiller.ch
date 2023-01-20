@@ -15,6 +15,9 @@
 		font-family: 'Archivo', 'Helvetica', sans-serif;
 		font-size: theme(fontSize.base);
 		color: theme(colors.tbeige);
+		@screen xs {
+			font-size: theme(fontSize.sm);
+		}
 	}
 	h1,
 	h2,

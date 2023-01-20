@@ -23,7 +23,7 @@
 	];
 </script>
 
-<footer class="absolute bottom-0 right-4 flex justify-end gap-10 items-center">
+<footer class="flex justify-end gap-10 items-center xs:flex-col-reverse xs:mt-5 xs:gap-4">
 	<div class="flex justify-between gap-2 items-center text-xxs">
 		<span>© 2023</span>
 		<Swissflag />

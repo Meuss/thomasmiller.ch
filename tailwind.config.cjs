@@ -5,7 +5,11 @@ module.exports = {
 		extend: {
 			container: {
 				center: true,
-				padding: '1rem'
+				padding: {
+					DEFAULT: '1.2rem',
+					sm: '1.5rem',
+					xs: '1rem'
+				}
 			},
 			screens: {
 				xl: { max: '1920px' },

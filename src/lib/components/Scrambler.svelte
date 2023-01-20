@@ -41,7 +41,7 @@
 	});
 </script>
 
-<h2 id="scrambler">Développeur web freelance</h2>
+<h2 id="scrambler" class="text-2xl sm:text-xl xs:text-base xs:leading-10">Développeur web freelance</h2>
 
 <style lang="postcss">
 	#scrambler {
