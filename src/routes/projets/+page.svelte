@@ -19,7 +19,7 @@
 		<h1>Projets</h1>
 	</div>
 
-	<div class="w-screen">
+	<div class="w-full">
 		<Projects />
 	</div>
 

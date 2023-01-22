@@ -2,47 +2,69 @@
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
 	import { Navigation } from 'swiper';
 	import { projects } from '$lib/data/projects.js';
+	import Project from '$lib/components/Project.svelte';
 	import 'swiper/css/navigation';
 	import 'swiper/css';
+
+	let offset = 100;
 </script>
 
-<div class="projects-wrapper relative">
-	<Swiper
-		speed={400}
-		spaceBetween={10}
-		slidesPerView={6}
-		slidesPerGroup={5}
-		loop={true}
-		navigation
-		modules={[Navigation]}
-		class="project-swiper"
-	>
-		{#each projects as project, i}
-			<SwiperSlide>
-				<div class="flex flex-col h-full py-3 px-4 shadow-2xl cursor-pointer text-sm">
-					<span class="font-warownia">{project.title}</span>
-					<a href={project.url} target="_blank" rel="noreferrer" class="text-xs text-torange underline">{project.shorturl}</a>
-					<span class="font-warownia">{project.year}</span>
-				</div>
-			</SwiperSlide>
-		{/each}
-	</Swiper>
+<div class="projects">
+	{#each projects as projectGroup, i}
+		<div class="projects-wrapper relative">
+			<Swiper
+				speed={400}
+				spaceBetween={10}
+				slidesPerView={5.5}
+				slidesOffsetBefore={offset}
+				slidesOffsetAfter={offset}
+				navigation
+				modules={[Navigation]}
+				class="project-swiper"
+			>
+				{#each projectGroup as project, i}
+					<SwiperSlide>
+						<Project {project} />
+					</SwiperSlide>
+				{/each}
+			</Swiper>
+		</div>
+	{/each}
 </div>
 
 <style lang="postcss">
+	.projects-wrapper {
+		overflow-x: hidden;
+		padding: 300px 0;
+		margin-top: -300px;
+		&:nth-of-type(2) {
+			transform: translateY(-200px);
+		}
+	}
 	:global(.swiper) {
-		overflow-y: visible;
-		padding: 40px 0;
+		position: unset !important;
+		overflow: visible;
 	}
 	:global(.swiper-slide) {
 		background-color: #2e2e2e;
 		margin-bottom: 0;
 		transition: 250ms all;
-		height: 200px;
-		/* aspect-ratio: 4/3; */
+		height: 176px;
+		transform-origin: center bottom;
 		&:hover {
-			transform: scale(1.2);
+			transform: scale(1.3) translateY(-50px);
 			z-index: 2;
+			filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+			z-index: 20;
+			:global(.details) {
+				opacity: 1;
+				pointer-events: auto;
+			}
 		}
+	}
+	:global(.details) {
+		opacity: 0;
+		transition: 250ms all;
+		pointer-events: none;
 	}
 </style>
