@@ -1,5 +1,7 @@
 <script>
 	import ExternalLink from '$lib/icons/ExternalLink.svelte';
+	import Macmac from '$lib/icons/Macmac.svelte';
+	import Marvelous from '$lib/icons/Marvelous.svelte';
 
 	export let project = {};
 </script>
@@ -12,8 +14,15 @@
 			<ExternalLink />
 		</a>
 		<div class="text-xxs mb-3"><strong>{project.title}</strong> - {project.description}</div>
-		<div class="flex justify-between text-xs">
+		<div class="flex justify-between text-xs items-center">
 			<strong>{project.year}</strong>
+			<div class="w-16 flex">
+				{#if project.where === 'macmac'}
+					<Macmac fill="#FFECD1" />
+				{:else if project.where === 'marvelous'}
+					<Marvelous fill="#FFECD1" />
+				{/if}
+			</div>
 		</div>
 	</div>
 </div>

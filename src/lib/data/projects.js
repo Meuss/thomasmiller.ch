@@ -13,6 +13,7 @@ export const projects = [
 			shorturl: 'info-retour.ch',
 			description: 'Projet réalisé pour le CSCSP en collaboration avec Jonas Schaller',
 			year: 2023,
+			where: 'freelance',
 			tech: ['kirby', 'php', 'javascript', 'tailwindcss']
 		},
 		{
@@ -22,6 +23,7 @@ export const projects = [
 			shorturl: 'metzgerei-aeberhard.ch',
 			description: 'Boucherie Aeberhard à Ried bei Kerzers',
 			year: 2017,
+			where: 'macmac',
 			tech: ['kirby', 'php', 'sass']
 		},
 		{
@@ -31,6 +33,7 @@ export const projects = [
 			shorturl: 'familizy.ch',
 			description: 'Des idées et des solutions pour un meilleur équilibre vie privée/vie professionnelle.',
 			year: 2020,
+			where: 'macmac',
 			tech: ['wordpress', 'php', 'javascript', 'sass', 'gsap']
 		},
 		{
@@ -40,6 +43,7 @@ export const projects = [
 			shorturl: 'macmac.ch',
 			description: 'Portfolio de projets réalisés par macmac',
 			year: 2019,
+			where: 'macmac',
 			tech: ['vue', 'gsap']
 		},
 		{
@@ -49,6 +53,7 @@ export const projects = [
 			shorturl: 'niche.cc',
 			description: 'Portfolio de Jonas Schaller, graphiste avec qui je collabore régulièrement.',
 			year: 2021,
+			where: 'freelance',
 			tech: ['kirby', 'sass', 'php']
 		},
 		{
@@ -58,6 +63,7 @@ export const projects = [
 			shorturl: 'sennlab.ch',
 			description: 'Espace de coworking à Berne',
 			year: 2020,
+			where: 'freelance',
 			tech: ['kirby', 'sass', 'php']
 		},
 		{
@@ -67,6 +73,7 @@ export const projects = [
 			shorturl: 'islerpedrazzini.ch',
 			description: "Bureau d'avocats à Zürich",
 			year: 2019,
+			where: 'macmac',
 			tech: ['nuxt', 'wordpress', 'gsap']
 		},
 		{
@@ -76,6 +83,7 @@ export const projects = [
 			shorturl: 'hertigfleurs.ch',
 			description: 'Shop en ligne de fleurs dans le canton de Fribourg',
 			year: 2017,
+			where: 'freelance',
 			tech: ['shopify', 'liquid', 'javascript', 'sass']
 		},
 		{
@@ -85,6 +93,7 @@ export const projects = [
 			shorturl: 'adler-murten.ch',
 			description: 'Hôtel & Pub à Morat',
 			year: 2017,
+			where: 'macmac',
 			tech: ['kirby', 'javascript', 'php', 'sass']
 		},
 		{
@@ -94,6 +103,7 @@ export const projects = [
 			shorturl: 's-performance-recovery.com',
 			description: 'API Laravel pour la webapp client de S-Performance Recovery',
 			year: 2022,
+			where: 'marvelous',
 			tech: ['laravel', 'php']
 		},
 		{
@@ -103,6 +113,7 @@ export const projects = [
 			shorturl: 'ardentis.ch',
 			description: "Cliniques Dentaires et d'Orthodontie",
 			year: 2021,
+			where: 'marvelous',
 			tech: ['wordpress', 'php', 'javascript', 'sass']
 		}
 	],
@@ -114,6 +125,7 @@ export const projects = [
 			shorturl: 'tksarchitekten.ch',
 			description: "Bureau d'architectes à Morat et Grenchen",
 			year: 2019,
+			where: 'macmac',
 			tech: ['wordpress', 'nuxt', 'php', 'sass', 'javascript']
 		},
 		{
@@ -123,6 +135,7 @@ export const projects = [
 			shorturl: 'cci-cotting.ch',
 			description: 'Consulting et conseils en développement, marketing et communication.',
 			year: 2017,
+			where: 'macmac',
 			tech: ['kirby', 'php', 'sass']
 		},
 		{
@@ -132,6 +145,7 @@ export const projects = [
 			shorturl: 'bimbosan.ch',
 			description: "Entreprise suisse spécialisée dans la fabrication d'aliments pour nourrissons",
 			year: 2015,
+			where: 'macmac',
 			tech: ['wordpress']
 		},
 		{
@@ -141,6 +155,7 @@ export const projects = [
 			shorturl: 'singlemalt-shop.ch',
 			description: 'Webshop de whisky et spiritueux pour un magasin à Morat',
 			year: 2015,
+			where: 'macmac',
 			tech: ['wordpress', 'woocommerce']
 		},
 		{
@@ -150,6 +165,7 @@ export const projects = [
 			shorturl: 'cricprint.ch',
 			description: "Imprimerie et maison d'édition coopérative à Marly",
 			year: 2018,
+			where: 'macmac',
 			tech: ['wordpress']
 		},
 		{
@@ -159,6 +175,7 @@ export const projects = [
 			shorturl: 'kaeserei-murten.ch',
 			description: 'Restaurant hautement recommandé à Morat',
 			year: 2016,
+			where: 'macmac',
 			tech: ['javascript', 'sass', 'kirby']
 		},
 		{
@@ -168,6 +185,7 @@ export const projects = [
 			shorturl: 'aas-architecture.ch',
 			description: "Atelier d'Architecture Seydoux",
 			year: 2019,
+			where: 'macmac',
 			tech: ['wordpress', 'javascript', 'vue']
 		},
 		{
@@ -177,6 +195,7 @@ export const projects = [
 			shorturl: 'cci-media.ch',
 			description: "Consulting pour l'organisation d'événements et de solutions vidéos",
 			year: 2017,
+			where: 'macmac',
 			tech: ['kirby', 'php', 'sass']
 		},
 		{
@@ -186,6 +205,7 @@ export const projects = [
 			shorturl: 'dietschweiler-stiftung.ch',
 			description: "Fondation Ria & Arthur Dietschweiler en Suisse allemande engagée pour l'éducation, la culture et le social",
 			year: 2019,
+			where: 'macmac',
 			tech: ['nuxt', 'wordpress']
 		},
 		{
@@ -195,6 +215,7 @@ export const projects = [
 			shorturl: 'schwery.com',
 			description: 'Entreprise de Bienne qui soutient les organisations dans la responsabilité sociale et la durabilité',
 			year: 2016,
+			where: 'macmac',
 			tech: ['wordpress', 'php']
 		},
 		{
@@ -204,6 +225,7 @@ export const projects = [
 			shorturl: 'prosaj.ch',
 			description: 'Association Suisse de probation et de travail social dans la justice',
 			year: 2015,
+			where: 'macmac',
 			tech: ['wordpress']
 		},
 		{
@@ -213,6 +235,7 @@ export const projects = [
 			shorturl: 'nydeggerwalter.ch',
 			description: 'Entreprise sanitaire de Giffers dans le canton de Fribourg',
 			year: 2017,
+			where: 'macmac',
 			tech: ['kirby', 'php', 'sass']
 		},
 		{
@@ -222,6 +245,7 @@ export const projects = [
 			shorturl: 'easytube.ch',
 			description: 'Présentation des tuyaux spécialisés pour le béton de E. Hofer AG',
 			year: 2017,
+			where: 'macmac',
 			tech: ['kirby', 'php', 'sass']
 		},
 		{
@@ -231,6 +255,7 @@ export const projects = [
 			shorturl: 'aspr-svg.ch',
 			description: 'Association Suisse des Paralysés',
 			year: 2017,
+			where: 'macmac',
 			tech: ['wordpress', 'php', 'javascrip', 'sass']
 		},
 		{
@@ -240,6 +265,7 @@ export const projects = [
 			shorturl: 'polio.ch',
 			description: "Communauté suisse d'Intérêts du Syndrome Post-Polio",
 			year: 2017,
+			where: 'macmac',
 			tech: ['wordpress', 'php', 'javascrip', 'sass']
 		},
 		{
@@ -249,6 +275,7 @@ export const projects = [
 			shorturl: 'bern-bubenberg.ch',
 			description: "Cabinet d'avocats et de conseil juridique à Berne",
 			year: 2017,
+			where: 'macmac',
 			tech: ['kirby']
 		}
 	]
