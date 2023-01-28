@@ -1,12 +1,32 @@
 <script>
+	import { onMount } from 'svelte';
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
+	import { gsap } from 'gsap';
 	import { Navigation } from 'swiper';
 	import { projects } from '$lib/data/projects.js';
 	import Project from '$lib/components/Project.svelte';
 	import 'swiper/css/navigation';
 	import 'swiper/css';
 
+	let ready = false;
 	let offset = 100;
+	let mouseIn = 0;
+	onMount(() => {
+		const tl = gsap.timeline();
+		tl.fromTo(
+			'.project-swiper',
+			{
+				opacity: 0,
+				pointerEvents: 'none'
+			},
+			{
+				opacity: 1,
+				pointerEvents: 'auto',
+				duration: 0.3,
+				delay: 0.3
+			}
+		);
+	});
 </script>
 
 <div class="projects">
@@ -15,12 +35,18 @@
 			<Swiper
 				speed={400}
 				spaceBetween={10}
-				slidesPerView={5.5}
+				slidesPerView={6.5}
 				slidesOffsetBefore={offset}
 				slidesOffsetAfter={offset}
 				navigation
 				modules={[Navigation]}
-				class="project-swiper"
+				class="{ready ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'} project-swiper transition-opacity"
+				on:afterInit={() => {
+					setTimeout(() => {
+						ready = true;
+					}, 300);
+				}}
+				on:mouseenter={() => (mouseIn = i)}
 			>
 				{#each projectGroup as project, i}
 					<SwiperSlide>
@@ -38,7 +64,7 @@
 		padding: 300px 0;
 		margin-top: -300px;
 		&:nth-of-type(2) {
-			transform: translateY(-200px);
+			transform: translateY(-230px);
 		}
 	}
 	:global(.swiper) {
@@ -46,25 +72,7 @@
 		overflow: visible;
 	}
 	:global(.swiper-slide) {
-		background-color: #2e2e2e;
+		user-select: none;
 		margin-bottom: 0;
-		transition: 250ms all;
-		height: 176px;
-		transform-origin: center bottom;
-		&:hover {
-			transform: scale(1.3) translateY(-50px);
-			z-index: 2;
-			filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
-			z-index: 20;
-			:global(.details) {
-				opacity: 1;
-				pointer-events: auto;
-			}
-		}
-	}
-	:global(.details) {
-		opacity: 0;
-		transition: 250ms all;
-		pointer-events: none;
 	}
 </style>

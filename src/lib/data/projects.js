@@ -11,7 +11,7 @@ export const projects = [
 			title: 'Retour',
 			url: 'https://info-retour.ch',
 			shorturl: 'info-retour.ch',
-			description: 'Projet réalisé pour le CSCSP en collaboration avec Jonas Schaller',
+			description: 'Projet réalisé pour le Centre suisse de compétences en matière d’exécution des sanctions pénales',
 			year: 2023,
 			where: 'freelance',
 			tech: ['kirby', 'php', 'javascript', 'tailwindcss']
