@@ -4,7 +4,7 @@
 	import { gsap } from 'gsap';
 	import { Navigation } from 'swiper';
 	import { projects } from '$lib/data/projects.js';
-	import Project from '$lib/components/Project.svelte';
+	import Project from '$lib/components/projets/Project.svelte';
 	import 'swiper/css/navigation';
 	import 'swiper/css';
 

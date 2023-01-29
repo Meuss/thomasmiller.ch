@@ -16,7 +16,7 @@
 			url: 'https://github.com/Meuss'
 		},
 		{
-			label: 'Mon profil Linkedin',
+			label: 'Mon profil LinkedIn',
 			icon: Linkedin,
 			url: 'https://www.linkedin.com/in/thomas-miller-671589a3'
 		}
@@ -34,7 +34,7 @@
 			<a class="relative p-2" href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
 				<svelte:component this={link.icon} />
 				<span
-					class="bg-white rounded-full absolute w-14 h-14 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-[1] border-torange border scale-75 opacity-0 duration-300"
+					class="bg-tbeige rounded-full absolute w-14 h-14 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-[1] scale-75 opacity-0 duration-300"
 				/>
 			</a>
 		{/each}

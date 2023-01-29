@@ -1,9 +1,3 @@
-// marvelous?
-// https://cashessentials.org/
-// opera lausanne
-// pinquest
-// verbierfestival
-
 export const projects = [
 	[
 		{
@@ -115,6 +109,26 @@ export const projects = [
 			year: 2021,
 			where: 'marvelous',
 			tech: ['wordpress', 'php', 'javascript', 'sass']
+		},
+		{
+			key: 'verbier',
+			title: 'Verbier Festival',
+			url: 'https://www.verbierfestival.com/',
+			shorturl: 'verbierfestival.com',
+			description: 'La musique classique au coeur des Alpes suisses',
+			year: 2021,
+			where: 'marvelous',
+			tech: ['wordpress', 'php']
+		},
+		{
+			key: 'opera',
+			title: 'Opéra de Lausanne',
+			url: 'https://www.opera-lausanne.ch/',
+			shorturl: 'opera-lausanne.ch',
+			description: 'L’Opéra de Lausanne participe au rayonnement culturel de la Suisse romande depuis 1871.',
+			year: 2021,
+			where: 'marvelous',
+			tech: ['wordpress', 'php']
 		}
 	],
 	[

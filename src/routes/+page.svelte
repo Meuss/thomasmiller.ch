@@ -1,6 +1,6 @@
 <script>
 	import Nav from '$lib/components/Nav.svelte';
-	import Scrambler from '$lib/components/Scrambler.svelte';
+	import Scrambler from '$lib/components/accueil/Scrambler.svelte';
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
 		<div class="max-w-[900px]">
 			<Scrambler />
 			<p>
-				Je développe des projets en tant que freelancer pour des clients dans toute la Suisse. Actuellement en train de chill chez <a
+				Je développe des projets en tant que freelancer pour des clients dans toute la Suisse. Actuellement chez <a
 					href="https://marvelous.digital"
 					target="_blank"
 					rel="noreferrer">Marvelous Digital</a

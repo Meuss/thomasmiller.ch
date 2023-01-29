@@ -1,5 +1,6 @@
 <script>
 	import '../styles/tailwind.css';
+	import Lines from '$lib/components/Lines.svelte';
 	import Fluid from '$lib/components/Fluid.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Toggle from '$lib/components/Toggle.svelte';
@@ -15,6 +16,7 @@
 		<Footer />
 	</div>
 	<Gradient />
+	<Lines />
 	<Fluid />
 </div>
 <div class="bg-tblack fixed w-screen h-screen top-0 -z-20" />

@@ -6,6 +6,10 @@
 
 	const routes = [
 		{
+			name: 'Accueil',
+			path: '/'
+		},
+		{
 			name: 'À propos',
 			path: '/a-propos'
 		},
