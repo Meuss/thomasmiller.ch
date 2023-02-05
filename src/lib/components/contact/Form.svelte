@@ -13,10 +13,10 @@
 	function validate() {
 		errors = {};
 		if (!name) {
-			errors.name = 'Incognito ça passe pas!';
+			errors.name = 'Incognito ça passe pas';
 		}
 		if (!email) {
-			errors.email = 'Email requis';
+			errors.email = 'Email obligatoire';
 		} else if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {
 			errors.email = 'Email invalide';
 		}
@@ -55,13 +55,6 @@
 	</div>
 	<div class="mb-4">
 		<label class="block text-tbeige text-sm mb-2" for="telephone">Numéro de tél</label>
-		<!-- <input
-			class="bg-tblack appearance-none w-full py-3 px-4 text-xs text-tbeige"
-			id="telephone"
-			name="telephone"
-			type="text"
-			bind:value={telephone}
-		/> -->
 		<input
 			class="bg-tblack appearance-none w-full py-3 px-4 text-xs text-tbeige"
 			use:imask={options}
@@ -93,4 +86,10 @@
 </form>
 
 <style lang="postcss">
+	input[type='text'],
+	input[type='email'],
+	input[type='tel'],
+	textarea {
+		background-color: theme('colors.tblack');
+	}
 </style>

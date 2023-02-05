@@ -148,6 +148,27 @@ export const techs = [
 		]
 	},
 	{
+		key: 'Mobile / Desktop',
+		icons: [
+			{
+				key: 'tauri',
+				name: 'tauri'
+			},
+			{
+				key: 'flutter',
+				name: 'flutter'
+			},
+			{
+				key: 'capacitor',
+				name: 'capacitor'
+			},
+			{
+				key: 'electron',
+				name: 'electron'
+			}
+		]
+	},
+	{
 		key: 'Autres',
 		icons: [
 			{

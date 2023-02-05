@@ -6,11 +6,11 @@
 
 	export let project = {};
 
-	gsap.defaults({ ease: 'power4.out' });
+	gsap.defaults({ ease: 'power4.inOut' });
 	const tl = gsap.timeline();
 	tl.pause();
 	function animate(element, play = true) {
-		tl.set(element, { zIndex: 200 });
+		tl.set(element, { zIndex: 200 }, 0.2);
 		tl.fromTo(
 			element,
 			{
@@ -28,31 +28,38 @@
 		tl.fromTo(
 			detailsDiv,
 			{
-				y: -150,
+				// y: -150,
+				yPercent: 0,
 				opacity: 0
 			},
 			{
-				y: 0,
+				// y: 0,
 				opacity: 1,
+				yPercent: 100,
 				duration: 0.5
 			},
 			0
 		);
-		const details = element.querySelectorAll('.details *');
+		const details = element.querySelectorAll('.details > *');
 		tl.fromTo(
 			details,
 			{
-				opacity: 0
+				opacity: 0,
+				y: 5
 			},
 			{
 				opacity: 1,
-				duration: 0.3
+				y: 0,
+				duration: 0.3,
+				stagger: 0.1
 			},
-			0.2
+			0.5
 		);
 		if (play) {
+			tl.timeScale(1);
 			tl.play();
 		} else {
+			tl.timeScale(1.5);
 			tl.reverse();
 		}
 	}
@@ -65,7 +72,7 @@
 	}
 </script>
 
-<div class="project relative" on:mouseenter={handleMouseEnter} on:mouseleave={handleMouseLeave}>
+<div class="project relative will-change-transform" on:mouseenter={handleMouseEnter} on:mouseleave={handleMouseLeave}>
 	<div class="relative z-20 aspect-[8/5]">
 		<img class="object-cover" src="/project-img/{project.key}.jpg" alt={project.title} />
 	</div>
@@ -74,13 +81,13 @@
 			href={project.url}
 			target="_blank"
 			rel="noreferrer"
-			class="text-xxs font-bold text-torange flex gap-2 mb-3 hover:underline"
+			class="text-xxs font-bold text-torange flex gap-2 mb-3 hover:underline will-change-transform"
 		>
 			{project.shorturl}
 			<ExternalLink />
 		</a>
-		<div class="text-xxs mb-3"><strong>{project.title}</strong> - {project.description}</div>
-		<div class="flex justify-between text-xs items-center">
+		<div class="text-xxs mb-3 will-change-transform"><strong>{project.title}</strong> - {project.description}</div>
+		<div class="flex justify-between text-xs items-center will-change-transform">
 			<strong>{project.year}</strong>
 			<div class="w-16 flex">
 				{#if project.where === 'macmac'}
@@ -101,6 +108,7 @@
 	}
 	.details {
 		position: absolute;
+		transform: translateY(-100%);
 		opacity: 0;
 	}
 </style>
