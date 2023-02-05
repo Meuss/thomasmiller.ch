@@ -1,7 +1,13 @@
 :root {
 	--swiper-theme-color: #ff7d00;
 	--swiper-navigation-color: #ff7d00;
+	--swiper-pagination-color: #ff7d00;
 	--swiper-navigation-size: 30px;
+	--swiper-pagination-bullet-horizontal-gap: 7px;
+	--swiper-pagination-bullet-width: 15px;
+	--swiper-pagination-bullet-height: 15px;
+	--swiper-pagination-bullet-inactive-opacity: 0.3;
+	--swiper-pagination-bullet-inactive-color: #ff7d00;
 }
 .swiper-slide {
 	margin-bottom: 50px;
@@ -26,4 +32,17 @@
 .swiper .swiper-button-prev {
 	padding: 0 40px 0 30px;
 	left: 0;
+}
+
+.swiper .swiper-horizontal > .swiper-pagination-bullets,
+.swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+	top: 10px;
+	right: 0;
+	bottom: auto;
+	left: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+.swiper-pagination-bullet:last-of-type {
+	margin-right: 0 !important;
 }

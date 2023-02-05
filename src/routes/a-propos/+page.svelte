@@ -1,6 +1,7 @@
 <script>
 	import Nav from '$lib/components/Nav.svelte';
 	import Tech from '$lib/components/a-propos/Tech.svelte';
+	import Testimonials from '$lib/components/a-propos/Testimonials.svelte';
 </script>
 
 <svelte:head>
@@ -29,7 +30,7 @@
 					utiliser pour les utilisateurs finaux.
 				</p>
 				<hr class="mt-20 mb-5" />
-				<h3>Témoignages</h3>
+				<Testimonials />
 			</div>
 			<div class="col-span-7 text-sm">
 				<Tech />
