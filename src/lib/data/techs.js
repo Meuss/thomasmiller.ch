@@ -4,40 +4,47 @@ export const techs = [
 		icons: [
 			{
 				key: 'html',
-				name: 'html'
+				span: 1
 			},
 			{
 				key: 'css',
-				name: 'css'
+				span: 1
 			},
 			{
 				key: 'javascript',
-				name: 'javascript'
+				span: 1
 			},
 			{
 				key: 'sass',
-				name: 'sass'
+				span: 1
 			},
 			{
 				key: 'svelte',
-				name: 'svelte'
+				span: 1
 			},
 			{
 				key: 'vue',
-				name: 'vue'
+				span: 1
 			},
 			{
 				key: 'greensock',
-				name: 'greensock',
-				span: 2
+				span: 1
 			},
 			{
 				key: 'tailwindcss',
-				name: 'tailwindcss'
+				span: 1
 			},
 			{
 				key: 'vite',
-				name: 'vite'
+				span: 1
+			},
+			{
+				key: 'sveltekit',
+				span: 2
+			},
+			{
+				key: 'nuxt',
+				span: 2
 			}
 		]
 	},
@@ -46,29 +53,27 @@ export const techs = [
 		icons: [
 			{
 				key: 'php',
-				name: 'php'
+				span: 1
 			},
 			{
 				key: 'laravel',
-				name: 'laravel'
-			},
-			{
-				key: 'sveltekit',
-				name: 'sveltekit',
-				span: 2
-			},
-			{
-				key: 'nuxt',
-				name: 'nuxt',
-				span: 2
+				span: 1
 			},
 			{
 				key: 'nodejs',
-				name: 'nodejs'
+				span: 1
 			},
 			{
 				key: 'mysql',
-				name: 'mysql'
+				span: 1
+			},
+			{
+				key: 'firebase',
+				span: 1
+			},
+			{
+				key: 'graphql',
+				span: 1
 			}
 		]
 	},
@@ -77,23 +82,22 @@ export const techs = [
 		icons: [
 			{
 				key: 'wordpress',
-				name: 'wordpress'
+				span: 1
 			},
 			{
 				key: 'kirby',
-				name: 'kirby'
+				span: 1
 			},
 			{
 				key: 'strapi',
-				name: 'strapi'
+				span: 1
 			},
 			{
 				key: 'prismic',
-				name: 'prismic'
+				span: 1
 			},
 			{
 				key: 'filament',
-				name: 'filament',
 				span: 2
 			}
 		]
@@ -103,108 +107,105 @@ export const techs = [
 		icons: [
 			{
 				key: 'shopify',
-				name: 'shopify'
+				span: 1
 			},
 			{
 				key: 'woocommerce',
-				name: 'woocommerce'
+				span: 1
+			},
+			{
+				key: 'snipcart',
+				span: 1
 			},
 			{
 				key: 'stripe',
-				name: 'stripe'
+				span: 1
 			},
 			{
 				key: 'postfinance',
-				name: 'postfinance',
-				span: 2
+				span: 1
 			},
 			{
 				key: 'datatrans',
-				name: 'datatrans',
 				span: 2
 			}
 		]
 	},
 	{
-		key: 'Design',
+		key: 'Design, Wireframes',
 		icons: [
 			{
 				key: 'figma',
-				name: 'figma'
+				span: 1
 			},
 			{
 				key: 'photoshop',
-				name: 'photoshop'
+				span: 1
 			},
 			{
 				key: 'sketch',
-				name: 'sketch'
+				span: 1
+			},
+			{
+				key: 'whimsical',
+				span: 1
+			},
+			{
+				key: 'notion',
+				span: 1
 			},
 			{
 				key: 'webflow',
-				name: 'webflow',
 				span: 2
 			}
 		]
 	},
 	{
-		key: 'Mobile / Desktop',
+		key: 'Native WebApps',
 		icons: [
 			{
 				key: 'tauri',
-				name: 'tauri'
+				span: 1
 			},
 			{
 				key: 'flutter',
-				name: 'flutter'
+				span: 1
 			},
 			{
 				key: 'capacitor',
-				name: 'capacitor'
-			},
-			{
-				key: 'electron',
-				name: 'electron'
+				span: 1
 			}
 		]
 	},
 	{
-		key: 'Autres',
+		key: 'Infrastructure',
 		icons: [
 			{
 				key: 'docker',
-				name: 'docker'
+				span: 1
 			},
 			{
 				key: 'git',
-				name: 'git'
+				span: 1
 			},
 			{
 				key: 'sentry',
-				name: 'sentry'
+				span: 1
 			},
 
 			{
 				key: 'postman',
-				name: 'postman'
+				span: 1
 			},
 			{
-				key: 'infomaniak',
-				name: 'infomaniak',
-				span: 2
-			},
-			{
-				key: 'buddy',
-				name: 'buddy',
-				span: 2
+				key: 'buddy'
 			},
 			{
 				key: 'netlify',
-				name: 'netlify'
+				span: 1
 			},
 			{
-				key: 'vercel',
-				name: 'vercel',
+				key: 'infomaniak',
 				span: 2
 			}
 		]
