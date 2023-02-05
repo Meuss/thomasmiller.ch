@@ -76,20 +76,20 @@
 	<div class="relative z-20 aspect-[8/5]">
 		<img class="object-cover" src="/project-img/{project.key}.jpg" alt={project.title} />
 	</div>
-	<div class="z-10 py-3 px-4 details bg-[#2e2e2e]">
+	<div class="details z-10 bg-[#2e2e2e] py-3 px-4">
 		<a
 			href={project.url}
 			target="_blank"
 			rel="noreferrer"
-			class="text-xxs font-bold text-torange flex gap-2 mb-3 hover:underline will-change-transform"
+			class="mb-3 flex gap-2 text-xxs font-bold text-torange will-change-transform hover:underline"
 		>
 			{project.shorturl}
 			<ExternalLink />
 		</a>
-		<div class="text-xxs mb-3 will-change-transform"><strong>{project.title}</strong> - {project.description}</div>
-		<div class="flex justify-between text-xs items-center will-change-transform">
+		<div class="mb-3 text-xxs will-change-transform"><strong>{project.title}</strong> - {project.description}</div>
+		<div class="flex items-center justify-between text-xs will-change-transform">
 			<strong>{project.year}</strong>
-			<div class="w-16 flex">
+			<div class="flex w-16">
 				{#if project.where === 'macmac'}
 					<Macmac fill="#FFECD1" />
 				{:else if project.where === 'marvelous'}

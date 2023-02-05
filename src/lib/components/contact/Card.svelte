@@ -41,8 +41,8 @@
 <div class="bg-tgray p-8 text-xs">
 	<div class="flex flex-col">
 		{#each links as link}
-			<div class="flex items-center mb-6">
-				<div class="bg-tlightbeige w-10 h-10 p-2 mr-8 rounded-full text-tblack">
+			<div class="mb-6 flex items-center">
+				<div class="mr-8 h-10 w-10 rounded-full bg-tlightbeige p-2 text-tblack">
 					<svelte:component this={link.icon} />
 				</div>
 				{#if link.href}

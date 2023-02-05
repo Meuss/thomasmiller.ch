@@ -7,9 +7,9 @@
 	<title>Thomas Miller, Développeur web freelance</title>
 </svelte:head>
 
-<main class="flex flex-col justify-between items-start relative gap-[100px]">
+<main class="relative flex flex-col items-start justify-between gap-[100px]">
 	<div class="container">
-		<div class="text-xl leading-none font-warownia">Bonjour, je suis</div>
+		<div class="font-warownia text-xl leading-none">Bonjour, je suis</div>
 		<h1 class="text-3xl leading-none text-torange">Thomas Miller</h1>
 	</div>
 

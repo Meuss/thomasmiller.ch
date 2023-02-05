@@ -32,7 +32,7 @@
 	<div
 		class="{toggled
 			? 'playing'
-			: 'paused'} icons absolute top-0 left-0 flex w-full h-full justify-around items-center pointer-events-none"
+			: 'paused'} icons pointer-events-none absolute top-0 left-0 flex h-full w-full items-center justify-around"
 	>
 		<Pause />
 		<Play />

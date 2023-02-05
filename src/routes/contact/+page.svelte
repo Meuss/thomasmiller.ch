@@ -8,7 +8,7 @@
 	<title>Contact - Thomas Miller</title>
 </svelte:head>
 
-<main class="flex flex-col justify-between items-start relative gap-[100px]">
+<main class="relative flex flex-col items-start justify-between gap-[100px]">
 	<div class="container">
 		<p>
 			Intéressé à travailler ensemble?<br />

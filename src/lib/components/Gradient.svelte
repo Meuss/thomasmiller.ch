@@ -1,5 +1,5 @@
 <svg
-	class="fixed -bottom-[47%] -right-[22%] pointer-events-none -z-[1]"
+	class="pointer-events-none fixed -bottom-[47%] -right-[22%] -z-[1]"
 	width="1025"
 	height="864"
 	viewBox="0 0 1025 864"

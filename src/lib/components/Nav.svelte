@@ -45,7 +45,7 @@
 	});
 </script>
 
-<nav class="flex flex-col items-start text-2xl uppercase font-warownia leading-none tracking-wide">
+<nav class="flex flex-col items-start font-warownia text-2xl uppercase leading-none tracking-wide">
 	{#each routes as { name, path }, i}
 		<a href={path} class="flex items-center gap-3 -translate-x-[59px]{$page.url.pathname === path ? ' active' : ''}">
 			<div><RightArrow /></div>

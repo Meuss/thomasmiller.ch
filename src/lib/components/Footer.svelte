@@ -23,18 +23,18 @@
 	];
 </script>
 
-<footer class="absolute bottom-0 right-4 flex justify-end gap-10 items-center">
-	<div class="flex justify-between gap-2 items-center text-xxs">
+<footer class="absolute bottom-0 right-4 flex items-center justify-end gap-10">
+	<div class="flex items-center justify-between gap-2 text-xxs">
 		<span>© 2023</span>
 		<Swissflag />
 		<span>Thomas Miller</span>
 	</div>
-	<div class="flex justify-between gap-4 items-center socials">
+	<div class="socials flex items-center justify-between gap-4">
 		{#each links as link}
 			<a class="relative p-2" href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
 				<svelte:component this={link.icon} />
 				<span
-					class="bg-tbeige rounded-full absolute w-14 h-14 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-[1] scale-75 opacity-0 duration-300"
+					class="absolute top-1/2 left-1/2 -z-[1] h-14 w-14 -translate-x-1/2 -translate-y-1/2 scale-75 rounded-full bg-tbeige opacity-0 duration-300"
 				/>
 			</a>
 		{/each}

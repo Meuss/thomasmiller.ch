@@ -7,14 +7,14 @@
 	<title>À propos - Thomas Miller</title>
 </svelte:head>
 
-<main class="flex flex-col justify-between items-start relative gap-[100px]">
+<main class="relative flex flex-col items-start justify-between gap-[100px]">
 	<div class="container">
 		<h1 class="max-w-[900px]">Création des sites web depuis 2015,<br />une expertise en constante évolution.</h1>
 	</div>
 
 	<div class="container">
 		<div class="grid grid-cols-12 gap-20">
-			<div class="text-sm col-span-5">
+			<div class="col-span-5 text-sm">
 				<p>
 					Je suis un développeur web fullstack expérimenté avec une solide compréhension des technologies frontend et backend.
 				</p>
@@ -31,7 +31,7 @@
 				<hr class="mt-20 mb-5" />
 				<h3>Témoignages</h3>
 			</div>
-			<div class="text-sm col-span-7">
+			<div class="col-span-7 text-sm">
 				<Tech />
 			</div>
 		</div>

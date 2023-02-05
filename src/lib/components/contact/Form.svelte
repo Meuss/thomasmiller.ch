@@ -26,37 +26,37 @@
 	}
 </script>
 
-<form class="bg-tgray px-8 pt-6 pb-8 mb-4" on:submit|preventDefault={validate}>
+<form class="mb-4 bg-tgray px-8 pt-6 pb-8" on:submit|preventDefault={validate}>
 	<div class="mb-4">
-		<label class="block text-tbeige text-sm mb-2" for="name">Nom *</label>
+		<label class="mb-2 block text-sm text-tbeige" for="name">Nom *</label>
 		<input
-			class="bg-tblack appearance-none w-full py-3 px-4 text-xs text-tbeige"
+			class="w-full appearance-none bg-tblack py-3 px-4 text-xs text-tbeige"
 			id="name"
 			name="name"
 			type="text"
 			bind:value={name}
 		/>
 		{#if errors.name}
-			<p class="text-torange text-xs italic">{errors.name}</p>
+			<p class="text-xs italic text-torange">{errors.name}</p>
 		{/if}
 	</div>
 	<div class="mb-4">
-		<label class="block text-tbeige text-sm mb-2" for="email">Email *</label>
+		<label class="mb-2 block text-sm text-tbeige" for="email">Email *</label>
 		<input
-			class="bg-tblack appearance-none w-full py-3 px-4 text-xs text-tbeige"
+			class="w-full appearance-none bg-tblack py-3 px-4 text-xs text-tbeige"
 			id="email"
 			name="email"
 			type="email"
 			bind:value={email}
 		/>
 		{#if errors.email}
-			<p class="text-torange text-xs italic">{errors.email}</p>
+			<p class="text-xs italic text-torange">{errors.email}</p>
 		{/if}
 	</div>
 	<div class="mb-4">
-		<label class="block text-tbeige text-sm mb-2" for="telephone">Numéro de tél</label>
+		<label class="mb-2 block text-sm text-tbeige" for="telephone">Numéro de tél</label>
 		<input
-			class="bg-tblack appearance-none w-full py-3 px-4 text-xs text-tbeige"
+			class="w-full appearance-none bg-tblack py-3 px-4 text-xs text-tbeige"
 			use:imask={options}
 			id="telephone"
 			name="telephone"
@@ -64,20 +64,20 @@
 			bind:value={telephone}
 		/>
 		{#if errors.telephone}
-			<p class="text-torange text-xs italic">{errors.telephone}</p>
+			<p class="text-xs italic text-torange">{errors.telephone}</p>
 		{/if}
 	</div>
 	<div class="mb-4">
-		<label class="block text-tbeige text-sm mb-2" for="message">Parlez-moi de votre projet, votre besoin ou autre.. *</label>
+		<label class="mb-2 block text-sm text-tbeige" for="message">Parlez-moi de votre projet, votre besoin ou autre.. *</label>
 		<textarea
 			rows="5"
-			class="bg-tblack appearance-none w-full py-3 px-4 text-xs text-tbeige"
+			class="w-full appearance-none bg-tblack py-3 px-4 text-xs text-tbeige"
 			id="message"
 			name="message"
 			bind:value={message}
 		/>
 		{#if errors.message}
-			<p class="text-torange text-xs italic">{errors.message}</p>
+			<p class="text-xs italic text-torange">{errors.message}</p>
 		{/if}
 	</div>
 	<div>
