@@ -34,12 +34,12 @@
 	}
 	p {
 		margin-bottom: 1.2rem;
-		a {
-			color: theme(colors.torange);
-			font-weight: theme(fontWeight.extrabold);
-			text-decoration: underline;
-			text-underline-offset: 3px;
-		}
+	}
+	p a {
+		color: theme(colors.torange);
+		font-weight: theme(fontWeight.extrabold);
+		text-decoration: underline;
+		text-underline-offset: 3px;
 	}
 }
 /* Utility classes (.card, .btn, etc.) */
