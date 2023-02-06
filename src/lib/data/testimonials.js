@@ -16,8 +16,8 @@ export const testimonials = [
 	{
 		key: 'jonas',
 		name: 'Jonas Schaller',
-		role: 'Client, niche.cc',
+		role: 'Client et collaborateur, niche.cc',
 		image: 'niche.svg',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem eu nunc. Sed euismod, nisl vel tincidunt aliquam, nunc nisl aliquet nisl, eget aliquam nisl lorem eu nunc.'
+		text: "Thomas réalise des sites web avec talent. Il s'engage, pose les bonnes questions et ne perd jamais de vue les objectifs. C'est un plaisir de réaliser des projets avec Thomas, les résultats de son travail en disent long."
 	}
 ];
