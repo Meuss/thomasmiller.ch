@@ -24,11 +24,9 @@
 </script>
 
 <footer class="flex justify-end gap-10 items-center xs:flex-col-reverse xs:mt-5 xs:gap-4">
-	<div class="flex justify-between gap-2 items-center text-xxs">
-		<span>© 2023</span>
+	<!-- <div class="flex justify-between gap-2 items-center text-xxs">
 		<Swissflag />
-		<span>Thomas Miller</span>
-	</div>
+	</div> -->
 	<div class="flex justify-between gap-4 items-center socials">
 		{#each links as link}
 			<a class="relative p-2" href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.label}>

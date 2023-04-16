@@ -7,9 +7,9 @@
 </script>
 
 <div class="layout min-h-screen py-[5vh] flex flex-col justify-center sm:py-15">
-	<div class="container relative self-stretch">
+	<!-- <div class="container relative self-stretch">
 		<Toggle />
-	</div>
+	</div> -->
 	<slot />
 	<!-- <div class="container relative self-stretch">
 		<Footer />
