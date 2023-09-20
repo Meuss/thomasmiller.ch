@@ -32,10 +32,10 @@
 	<title>Contact</title>
 </svelte:head>
 
-<main class="flex flex-col justify-between items-start relative gap-[100px]">
+<main class="relative flex flex-col items-start justify-between gap-[100px]">
 	<div class="container">
 		<p>
-			<a href="/" class="flex gap-2 items-center -translate-x-[25px]">
+			<a href="/" class="flex -translate-x-[25px] items-center gap-2">
 				<LeftArrow />
 				Retour
 			</a>
@@ -44,11 +44,11 @@
 	</div>
 
 	<div class="container">
-		<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" on:submit|preventDefault={validate}>
+		<form class="bg-white mb-4 rounded px-8 pb-8 pt-6 shadow-md" on:submit|preventDefault={validate}>
 			<div class="mb-4">
-				<label class="block text-gray-700 text-sm font-bold mb-2" for="name"> Name </label>
+				<label class="text-gray-700 mb-2 block text-sm font-bold" for="name"> Name </label>
 				<input
-					class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+					class="text-gray-700 focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight shadow focus:outline-none"
 					id="name"
 					name="name"
 					type="text"
@@ -60,9 +60,9 @@
 				{/if}
 			</div>
 			<div class="mb-4">
-				<label class="block text-gray-700 text-sm font-bold mb-2" for="email"> Email </label>
+				<label class="text-gray-700 mb-2 block text-sm font-bold" for="email"> Email </label>
 				<input
-					class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+					class="text-gray-700 focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight shadow focus:outline-none"
 					id="email"
 					name="email"
 					type="text"
@@ -74,9 +74,9 @@
 				{/if}
 			</div>
 			<div class="mb-4">
-				<label class="block text-gray-700 text-sm font-bold mb-2" for="telephone"> Telephone </label>
+				<label class="text-gray-700 mb-2 block text-sm font-bold" for="telephone"> Telephone </label>
 				<input
-					class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+					class="text-gray-700 focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight shadow focus:outline-none"
 					id="telephone"
 					name="telephone"
 					type="text"
@@ -88,9 +88,9 @@
 				{/if}
 			</div>
 			<div class="mb-4">
-				<label class="block text-gray-700 text-sm font-bold mb-2" for="message"> Message </label>
+				<label class="text-gray-700 mb-2 block text-sm font-bold" for="message"> Message </label>
 				<textarea
-					class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+					class="text-gray-700 focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight shadow focus:outline-none"
 					id="message"
 					name="message"
 					placeholder="Write something.."

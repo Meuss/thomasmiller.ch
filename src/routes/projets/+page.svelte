@@ -8,10 +8,10 @@
 	<title>Projets</title>
 </svelte:head>
 
-<main class="flex flex-col justify-between items-start relative gap-[100px]">
+<main class="relative flex flex-col items-start justify-between gap-[100px]">
 	<div class="container">
 		<p>
-			<a href="/" class="flex gap-2 items-center -translate-x-[25px]">
+			<a href="/" class="flex -translate-x-[25px] items-center gap-2">
 				<LeftArrow />
 				Retour
 			</a>

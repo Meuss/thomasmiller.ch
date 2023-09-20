@@ -6,7 +6,7 @@
 	import Gradient from '$lib/components/Gradient.svelte';
 </script>
 
-<div class="layout min-h-screen py-[5vh] flex flex-col justify-center sm:py-15">
+<div class="layout sm:py-15 flex min-h-screen flex-col justify-center py-[5vh]">
 	<!-- <div class="container relative self-stretch">
 		<Toggle />
 	</div> -->
@@ -17,4 +17,4 @@
 	<Gradient />
 	<Fluid />
 </div>
-<div class="bg-tblack fixed w-screen h-screen top-0 -z-20" />
+<div class="fixed top-0 -z-20 h-screen w-screen bg-tblack" />

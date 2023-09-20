@@ -19,7 +19,7 @@
 	}
 </script>
 
-<div class="toggle-wrapper absolute top-0 right-4 z-10 sm:hidden">
+<div class="toggle-wrapper absolute right-4 top-0 z-10 sm:hidden">
 	<Toggle
 		hideLabel
 		label="Turn off visual effects"
@@ -32,7 +32,7 @@
 	<div
 		class="{toggled
 			? 'playing'
-			: 'paused'} icons absolute top-0 left-0 flex w-full h-full justify-around items-center pointer-events-none"
+			: 'paused'} icons pointer-events-none absolute left-0 top-0 flex h-full w-full items-center justify-around"
 	>
 		<Pause />
 		<Play />
