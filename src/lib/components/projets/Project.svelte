@@ -72,11 +72,12 @@
 	}
 </script>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="project relative will-change-transform" on:mouseenter={handleMouseEnter} on:mouseleave={handleMouseLeave}>
 	<div class="relative z-20 aspect-[8/5]">
 		<img class="object-cover" src="/project-img/{project.key}.jpg" alt={project.title} />
 	</div>
-	<div class="details z-10 bg-[#2e2e2e] py-3 px-4">
+	<div class="details z-10 bg-[#2e2e2e] px-4 py-3">
 		<a
 			href={project.url}
 			target="_blank"

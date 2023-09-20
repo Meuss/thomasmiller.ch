@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="absolute rounded-md bg-tgray py-2 px-3 font-warownia text-xxs capitalize text-tbeige"
+	class="absolute rounded-md bg-tgray px-3 py-2 font-warownia text-xxs capitalize text-tbeige"
 	style="
 		top: {y + 10}px;
 		left: {x + 15}px;"
