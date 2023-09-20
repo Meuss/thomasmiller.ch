@@ -8,7 +8,7 @@
 	<title>Thomas Miller, Développeur web freelance</title>
 </svelte:head>
 
-<main class="flex flex-col justify-between items-start relative gap-[20px] sm:gap-11">
+<main class="relative flex flex-col items-start justify-between gap-[20px] sm:gap-11">
 	<div class="container">
 		<!-- <div class="text-xl leading-none font-warownia sm:text-lg">Bonjour, je suis</div> -->
 		<h1 class="text-3xl leading-none sm:text-2xl xs:text-xl">Thomas Miller</h1>
@@ -30,7 +30,7 @@
 				</p> -->
 			</div>
 		</div>
-		<div class="bot mt-20 flex justify-between items-center sm:flex-col sm:items-start xs:mt-8 xs:text-xs">
+		<div class="bot mt-20 flex items-center justify-between sm:flex-col sm:items-start xs:mt-8 xs:text-xs">
 			<p class="mb-0 sm:mb-4">Un projet en tête? <br /><a href="mailto:thomas.miller147@gmail.com">Contactez-moi</a>.</p>
 			<Footer />
 		</div>

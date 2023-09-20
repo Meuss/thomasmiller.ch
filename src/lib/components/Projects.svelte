@@ -19,7 +19,7 @@
 	>
 		{#each projects as project, i}
 			<SwiperSlide>
-				<div class="flex flex-col h-full py-3 px-4 shadow-2xl cursor-pointer text-sm">
+				<div class="flex h-full cursor-pointer flex-col px-4 py-3 text-sm shadow-2xl">
 					<span class="font-warownia">{project.title}</span>
 					<a href={project.url} target="_blank" rel="noreferrer" class="text-xs text-torange underline">{project.shorturl}</a>
 					<span class="font-warownia">{project.year}</span>
