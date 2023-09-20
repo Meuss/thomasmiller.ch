@@ -29,7 +29,7 @@
 					Je suis passionné par la création de sites web et d'applications robustes, esthétiquement plaisants et faciles à
 					utiliser pour les utilisateurs finaux.
 				</p>
-				<hr class="mt-20 mb-5" />
+				<hr class="mb-5 mt-20" />
 				<Testimonials />
 			</div>
 			<div class="col-span-7 text-sm">

@@ -34,7 +34,7 @@
 			<a class="relative p-2" href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.label}>
 				<svelte:component this={link.icon} />
 				<span
-					class="absolute top-1/2 left-1/2 -z-[1] h-14 w-14 -translate-x-1/2 -translate-y-1/2 scale-75 rounded-full bg-tbeige opacity-0 duration-300"
+					class="absolute left-1/2 top-1/2 -z-[1] h-14 w-14 -translate-x-1/2 -translate-y-1/2 scale-75 rounded-full bg-tbeige opacity-0 duration-300"
 				/>
 			</a>
 		{/each}

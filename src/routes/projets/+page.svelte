@@ -8,7 +8,7 @@
 </svelte:head>
 
 <main class="relative flex flex-col items-start justify-between gap-[100px] overflow-hidden">
-	<div class="mt-28 mb-[-500px] w-full">
+	<div class="mb-[-500px] mt-28 w-full">
 		<Projects />
 	</div>
 

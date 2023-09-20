@@ -26,11 +26,11 @@
 	}
 </script>
 
-<form class="mb-4 bg-tgray px-8 pt-6 pb-8" on:submit|preventDefault={validate}>
+<form class="mb-4 bg-tgray px-8 pb-8 pt-6" on:submit|preventDefault={validate}>
 	<div class="mb-4">
 		<label class="mb-2 block text-sm text-tbeige" for="name">Nom *</label>
 		<input
-			class="w-full appearance-none bg-tblack py-3 px-4 text-xs text-tbeige"
+			class="w-full appearance-none bg-tblack px-4 py-3 text-xs text-tbeige"
 			id="name"
 			name="name"
 			type="text"
@@ -43,7 +43,7 @@
 	<div class="mb-4">
 		<label class="mb-2 block text-sm text-tbeige" for="email">Email *</label>
 		<input
-			class="w-full appearance-none bg-tblack py-3 px-4 text-xs text-tbeige"
+			class="w-full appearance-none bg-tblack px-4 py-3 text-xs text-tbeige"
 			id="email"
 			name="email"
 			type="email"
@@ -56,7 +56,7 @@
 	<div class="mb-4">
 		<label class="mb-2 block text-sm text-tbeige" for="telephone">Numéro de tél</label>
 		<input
-			class="w-full appearance-none bg-tblack py-3 px-4 text-xs text-tbeige"
+			class="w-full appearance-none bg-tblack px-4 py-3 text-xs text-tbeige"
 			use:imask={options}
 			id="telephone"
 			name="telephone"
@@ -71,7 +71,7 @@
 		<label class="mb-2 block text-sm text-tbeige" for="message">Parlez-moi de votre projet, votre besoin ou autre.. *</label>
 		<textarea
 			rows="5"
-			class="w-full appearance-none bg-tblack py-3 px-4 text-xs text-tbeige"
+			class="w-full appearance-none bg-tblack px-4 py-3 text-xs text-tbeige"
 			id="message"
 			name="message"
 			bind:value={message}
