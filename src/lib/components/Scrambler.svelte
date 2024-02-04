@@ -7,6 +7,7 @@
 		'Développeur web freelance',
 		'Je fais [des sites web]',
 		'Je développe [des applications]',
+		"J'ai [l'expérience]",
 		'Je fais du [e-commerce]',
 		'Je gère le [frontend]',
 		'Je gère le [backend]',
@@ -15,8 +16,6 @@
 		'Je code en [javascript]',
 		'Je code en [PHP]',
 		'Je construis des [APIs]',
-		'Je peux [vous conseiller]',
-		"J'ai de [l'expérience]",
 		'Je suis [un passionné]',
 		"[Je suis celui qu'il vous faut]",
 		'Développeur web freelance'
