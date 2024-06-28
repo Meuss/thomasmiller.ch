@@ -1,9 +1,18 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteCond %{HTTPS} off 
+
+  # Redirect www to non-www and enforce HTTPS
+  RewriteCond %{HTTP_HOST} ^www\.thomasmiller\.ch [NC]
+  RewriteRule ^(.*)$ https://thomasmiller.ch/$1 [L,R=301]
+
+  # Enforce HTTPS for all requests
+  RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
   RewriteBase /
   RewriteRule ^index\.html$ - [L]
+
+  # Redirect all requests to index.html if the requested resource doesn't exist
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]

@@ -6,7 +6,7 @@
 	import Gradient from '$lib/components/Gradient.svelte';
 </script>
 
-<div class="layout sm:py-15 flex min-h-screen flex-col justify-center py-[5vh]">
+<div class="layout sm:py-15 flex min-h-[100svh] flex-col justify-center py-[5vh]">
 	<!-- <div class="container relative self-stretch">
 		<Toggle />
 	</div> -->

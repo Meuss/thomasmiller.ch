@@ -7,10 +7,9 @@
 
 /* Default styles for plain HTML elements */
 @layer base {
-	/* ::selection {
-		color: white;
-		background: #ff7d0050;
-	} */
+	* {
+		user-select: none;
+	}
 	body {
 		font-family: 'Archivo', 'Helvetica', sans-serif;
 		font-size: theme(fontSize.base);
